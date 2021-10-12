@@ -44,3 +44,46 @@
 2021-05-10 17:47:12,406 INFO [api_app.py (api_app_channel_article：46)] - 调用方法：get 调用数据：{'channel_id': '7', 'timestamp': 1620640032, 'with_top': 1} 请求头：{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA2NDczNjIsImFkbWluaXN0cmF0b3JfaWQiOjIsInJlZnJlc2giOmZhbHNlfQ.mRDz9Bf6zJzjefvhBKp3Tj_fADJFTaxsPCmlJA7IyXY'}
 2021-05-10 17:47:12,406 INFO [tool.py (common_assert：25)] - 正在调用公共断言方法
 2021-05-10 17:47:12,407 ERROR [tool.py (common_assert：33)] - 断言失败 状态码：401
+2021-10-12 17:57:51,315 INFO [api_mp.py (__init__：11)] - ********************************************************************************************************************************************************************************************************
+
+2021-10-12 17:57:51,316 INFO [api_mp.py (__init__：14)] - 正在初始化自媒体登录url:http://ttapi.research.itcast.cn/mp/v1_0/authorizations
+2021-10-12 17:57:51,316 INFO [api_mp.py (__init__：17)] - 正在初始化自媒体发布文章url:http://ttapi.research.itcast.cn/mp/v1_0/articles
+2021-10-12 17:57:51,316 INFO [api_mp.py (api_mp_login：26)] - --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2021-10-12 17:57:51,317 INFO [api_mp.py (api_mp_login：27)] - 正在调用自媒体登录接口
+2021-10-12 17:57:51,709 INFO [api_mp.py (api_mp_login：32)] - 请求方法：post 请求数据：{'mobile': '13030206549', 'code': '246811'}
+2021-10-12 17:57:51,788 INFO [api_mp.py (api_mp_article：44)] - --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2021-10-12 17:57:51,789 INFO [api_mp.py (api_mp_article：45)] - 正在调用自媒体发布文章接口
+2021-10-12 17:57:51,789 INFO [api_mp.py (api_mp_article：49)] - 请求数据：{'title': 'test-interface-001', 'content': '接口测试', 'imgType': 'auto', 'channel_id': '7', 'cover': {'type': -1, 'images': []}}
+2021-10-12 17:57:51,877 INFO [api_mp.py (api_mp_article：52)] - 请求方法：post 请求数据：{'title': 'test-interface-001', 'content': '接口测试', 'imgType': 'auto', 'channel_id': '7', 'cover': {'type': -1, 'images': []}} 请求头：{'Content-Type': 'application/json'}
+2021-10-12 17:57:51,900 INFO [api_mis.py (__init__：12)] - ********************************************************************************************************************************************************************************************************
+
+2021-10-12 17:57:51,900 INFO [api_mis.py (__init__：15)] - 正在初始化后台管理系统 登录url：http://ttapi.research.itcast.cn/mis/v1_0/authorizations
+2021-10-12 17:57:51,900 INFO [api_mis.py (__init__：18)] - 正在初始化后台管理系统 查询文章url：http://ttapi.research.itcast.cn/mis/v1_0/articles
+2021-10-12 17:57:51,900 INFO [api_mis.py (__init__：21)] - 正在初始化后台管理系统 审核文章url：http://ttapi.research.itcast.cn/mis/v1_0/articles
+2021-10-12 17:57:51,901 INFO [api_mis.py (api_mis_login：30)] - --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2021-10-12 17:57:51,901 INFO [api_mis.py (api_mis_login：31)] - 正在调用后台管理系统登录接口
+2021-10-12 17:57:51,991 INFO [api_mis.py (api_mis_login：36)] - 请求方法：post 请求数据：{'account': 'testid', 'password': 'testpwd123'} 请求信息头：{'Content-Type': 'application/json'}
+2021-10-12 17:57:51,991 ERROR [tool.py (common_token：18)] - Expecting value: line 1 column 1 (char 0)
+2021-10-12 17:57:52,015 INFO [api_mis.py (api_mis_search：46)] - --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2021-10-12 17:57:52,015 INFO [api_mis.py (api_mis_search：47)] - 正在调用后台管理系统查询文章接口
+2021-10-12 17:57:52,104 INFO [api_mis.py (api_mis_search：52)] - 请求方法：get 请求数据：{'title': 'test-interface-001', 'channel': '数据库'} 请求信息头：{'Content-Type': 'application/json'}
+2021-10-12 17:57:52,105 INFO [tool.py (common_assert：24)] - 正在调用公共断言方法
+2021-10-12 17:57:52,105 ERROR [tool.py (common_assert：32)] - 断言失败 状态码：502
+2021-10-12 17:57:52,109 INFO [api_mis.py (api_mis_audit：62)] - --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2021-10-12 17:57:52,109 INFO [api_mis.py (api_mis_audit：63)] - 正在调用后台管理系统审核文章接口
+2021-10-12 17:57:52,210 INFO [api_mis.py (api_mis_audit：68)] - 请求方法：get 请求数据：{'article_ids': [None], 'statue': 2} 请求信息头：{'Content-Type': 'application/json'}
+2021-10-12 17:57:52,210 INFO [tool.py (common_assert：24)] - 正在调用公共断言方法
+2021-10-12 17:57:52,210 ERROR [tool.py (common_assert：32)] - 断言失败 状态码：502
+2021-10-12 17:57:52,214 INFO [api_app.py (__init__：12)] - ********************************************************************************************************************************************************************************************************
+
+2021-10-12 17:57:52,215 INFO [api_app.py (__init__：15)] - 正在初始化app 登录url：http://ttapi.research.itcast.cn/app/v1_0/authorizations
+2021-10-12 17:57:52,215 INFO [api_app.py (__init__：18)] - 正在初始化app查看频道文章 登录url：http://ttapi.research.itcast.cn/app/v1_0/authorizations
+2021-10-12 17:57:52,215 INFO [api_app.py (api_app_login：27)] - --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2021-10-12 17:57:52,215 INFO [api_app.py (api_app_login：28)] - 正在调用app登录接口
+2021-10-12 17:57:52,319 INFO [api_app.py (api_app_login：31)] - 调用方法：post 调用数据：{'mobile': '13912345678,', 'code': '246810'} 请求头：{'Content-Type': 'application/json'}
+2021-10-12 17:57:52,320 ERROR [tool.py (common_token：18)] - Expecting value: line 1 column 1 (char 0)
+2021-10-12 17:57:52,343 INFO [api_app.py (api_app_channel_article：42)] - --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2021-10-12 17:57:52,343 INFO [api_app.py (api_app_channel_article：43)] - 正在调用app查看频道文章接口
+2021-10-12 17:57:52,433 INFO [api_app.py (api_app_channel_article：46)] - 调用方法：get 调用数据：{'channel_id': '7', 'timestamp': 1634032672, 'with_top': 1} 请求头：{'Content-Type': 'application/json'}
+2021-10-12 17:57:52,434 INFO [tool.py (common_assert：24)] - 正在调用公共断言方法
+2021-10-12 17:57:52,434 ERROR [tool.py (common_assert：32)] - 断言失败 状态码：502

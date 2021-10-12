@@ -1,6 +1,8 @@
 """公共变量"""
 # 1.请求域名
+from config import base_path
 from tool.read_json import read_json
+
 
 host = "http://ttapi.research.itcast.cn"
 # 2.请求信息头
@@ -8,7 +10,7 @@ headers = {"Content-Type": "application/json"}
 # 文章id
 article_id = None
 # 发布文章数据
-data_article = read_json("D:/PyCharm/MyProject/apiAutoTestHmtt/data/mp_article.json")
+data_article = read_json(base_path+"/data/mp_article.json")
 # 文章标题
 title = data_article[0][0]
 # 文章内容
